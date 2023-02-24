@@ -43,3 +43,5 @@
 `lxc config set container-name security.privileged true`
 `lxc config set container-name security.nesting true`
 
+# listing all snap install packages
+`sudo snap list`
