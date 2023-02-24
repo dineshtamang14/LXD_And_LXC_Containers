@@ -16,6 +16,7 @@
 
 # to launch a image
 `lxc launch ubuntu:16.04 container-name`
+`lxc launch images:centos/9/amd64 container-name --profile=profile-name`
 
 # listing a running containers
 `lxc list`
@@ -37,6 +38,7 @@
 
 # to get a shell access with different user
 `lxc exec container-name su - ubuntu`
+`lxc exec container-name -- /bin/bash`
 
 # to check os release
 `lsb_release -dirc`
@@ -55,3 +57,6 @@
 
 # to print machine configuration
 `lxc config show container-name | less`
+
+# to delete local cached images
+`lxc image delete image-id`

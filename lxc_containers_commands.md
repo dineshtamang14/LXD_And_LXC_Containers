@@ -39,3 +39,7 @@
 # To restore lxc container from snapshot
 `lxc restore container-name snapshot-name`
 
+# for nested lxc containers security configuration
+`lxc config set container-name security.privileged true`
+`lxc config set container-name security.nesting true`
+
