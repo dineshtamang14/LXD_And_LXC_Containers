@@ -21,7 +21,7 @@
 
 # To check cpu and memory
 cpu: `nproc`
-memory: `free -g`
+memory: `free -g` here -g flag is for gigabyte
 
 # To set cpu through lxc command
 `lxc profile set profile-name limits.cpu 2`
@@ -39,3 +39,14 @@ memory: `free -g`
 # To Apply custom profile to container
 `lxc profile add container-name profile-name`
 
+# To remove profile name from container
+`lxc profile remove container-name profile-name`
+
+# To apply auto start configuration to profile
+`lxc profile set custom boot.autostart "true"`
+
+# To restart lxd cluster in ubuntu
+`sudo snap restart lxd`
+
+# To list all snap installed packages
+`sudo snap list`
