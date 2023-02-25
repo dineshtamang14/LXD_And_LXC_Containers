@@ -179,3 +179,9 @@ kmaster     Ready    master   23m   v1.19.2
 kworker01   Ready    <none>   19m   v1.19.2
 kworker02   Ready    <none>   17m   v1.19.2
 ```
+
+# To print the cluster information
+```kubectl cluster-info```
+
+# To print all the nodes information
+```kubectl get nodes -o wide```
