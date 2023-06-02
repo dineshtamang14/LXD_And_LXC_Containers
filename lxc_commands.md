@@ -37,26 +37,49 @@
 `lxc exec container-name bash`
 
 # to get a shell access with different user
-`lxc exec container-name su - ubuntu`
-`lxc exec container-name -- /bin/bash`
+```sh
+lxc exec container-name su - ubuntu
+```
+```sh
+lxc exec container-name -- /bin/bash
+```
 
 # to check os release
-`lsb_release -dirc`
+```sh
+lsb_release -dirc
+```
 
 # to check how many cpu's
-`nproc`
+```sh
+nproc
+```
 
 # to ping another container 
-`ping container-name.lxd`
+```sh
+ping container-name.lxd
+```
 
 # to container details
-`lxc info container-name | less`
+```sh
+lxc info container-name | less
+```
 
 # printing a process tree
-`pstree -p 7629`
+```sh
+pstree -p 7629
+```
 
 # to print machine configuration
-`lxc config show container-name | less`
+```sh
+lxc config show container-name | less
+```
 
 # to delete local cached images
-`lxc image delete image-id`
+```sh
+lxc image delete image-id
+```
+
+### To search for containers
+```sh
+lxc image list images: | grep -i centos
+```
